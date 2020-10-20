@@ -106,7 +106,7 @@ app.get('/tasks', (req, res) => {
     res.send(user.tasks);
 });
 
-const port = 5655;
+const port = process.env.PORT || 5655;
 
 app.listen(port, () => {
 
